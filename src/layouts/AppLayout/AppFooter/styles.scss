@@ -1,0 +1,30 @@
+.footer{
+  background-image: url('../../../assets/images/footer.jpeg');
+  background-position: 50% 59%;
+  background-size: cover;
+  color: white;
+
+  .content{
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .table :where(th, td){
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  ul.link-list{
+    li{
+      margin: 0.75rem 0;
+    }
+  }
+  .follow{
+    .btn{
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  .payment{
+    .btn{
+      padding: 0.45rem 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.hero-section{
+  background-color: black;
+  background-image: url('../../../assets/images/hero-bg.jpeg');
+  background-position: 20% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+  @media (min-width: 768px) {
+    background-position: -40% 0%;
+    background-size: cover;
+  }
+
+  @media (min-width: 1024px) {
+    background-position: -126% 28%;
+    background-size: cover;
+  }
+
+  @media (min-width: 1536px) {
+    background-size: 2039px;
+    background-position: -65% 27%;
+  }
+
+  .content{
+    background-image: linear-gradient(100deg, black, #0000003d);
+  }
+
+  .heading{
+    font-family: 'Healing Again Demo';
+  }
+}
