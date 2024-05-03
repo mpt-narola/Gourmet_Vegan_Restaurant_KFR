@@ -1,22 +1,38 @@
 import React from 'react'
-import img1 from "../../assets/images/gallary/img-1.png"
-import img2 from "../../assets/images/gallary/img-2.png"
-import img3 from "../../assets/images/gallary/img-3.png"
-import img4 from "../../assets/images/gallary/img-4.png"
-import img5 from "../../assets/images/gallary/img-5.png"
+import img1 from "../../../assets/images/gallary/img-1.png"
+import img2 from "../../../assets/images/gallary/img-2.png"
+import img3 from "../../../assets/images/gallary/img-3.png"
+import img4 from "../../../assets/images/gallary/img-4.png"
+import img5 from "../../../assets/images/gallary/img-5.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import './styles.scss';
 
 const Gallery = () => {
   return (
     <div className='my-5 text-center'>
       <div className=''>
-        <div className='mb-4 static'>
-          <p className='font-had text-5xl leading-[80px] text-center text-[#0B1928] p-4'>Gallery</p>
-          <div className='carousel carousel-center max-w-full inline-flex md:overflow-x-hidden md:hover:overflow-x-auto overflow-y-hidden'>
+        <div className='relative mb-4'>
+          <Swiper
+            slidesPerView={'auto'}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
             {[img1, img2, img3, img4, img5].map((img, index) => {
               return (
-                <div className={`carousel-item inline-block ${index === 0 ? 'pr-3' : 'px-3'}`}>
-                  <div className='max-h-80 w-72 relative group'>
-                    <div className='absolute p-7 border bg-transparent group-hover:bg-[#00000091] w-full h-full transition-all'>
+                <SwiperSlide className='max-h-80 w-72 relative group'>
+                  <div className='absolute p-7 border bg-transparent group-hover:bg-[#00000091] w-full h-full transition-all'>
                       <div className='border-0 h-full flex group-hover:border group-hover:border-[#ddbc7a]'>
                         <div className='m-auto hidden group-hover:block text-center'>
                           <svg width="22" height="22" viewBox="0 0 22 22" className='mx-auto' fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,26 +42,12 @@ const Gallery = () => {
                         </div>
                       </div>
                     </div>
-                    <img src={img} className='h-full' />
-                  </div>
-                  {/* <div className='w-full h-full absolute top-0 right-0'>
-                    abc
-                  </div> */}
-                  {/* <div class="relative">
-        <div class="static">
-          <div className='max-h-80 w-72 '>
-            <img src={img} className='h-full' />
-          </div>
-
-            <div class="absolute top-0 right-0 bg-transparent hover:bg-black">
-              <p>Absolute child</p>
-          </div>
-        </div>
-      </div> */}
-                </div>
+                  <img src={img} className='h-full' />
+                </SwiperSlide>
               )
             })}
-          </div>
+          </Swiper>
+
         </div>
       </div>
       <div className='text-center'>

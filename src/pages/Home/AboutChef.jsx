@@ -7,8 +7,8 @@ import chef3 from "../../assets/images/chef-about-3.png"
 const AboutChef = () => {
   return (
     <div className='mx-4 md:mx-16 mb-8'>
-      <img src={bestQuality} alt="best-qualitity" className='w-24 md:w-auto p-2 mx-auto bg-white lg:p-4 rounded-full -translate-y-1/2 -mb-16' />
-      <div className='flex'>
+      <img src={bestQuality} alt="best-qualitity" className='w-14 sm:w-24 md:w-auto p-2 mx-auto bg-white lg:p-4 rounded-full -translate-y-1/2 -mb-16' />
+      <div className='flex pt-8'>
         <div className='max-w-80 hidden lg:block relative'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
             <button className='btn rounded-full bg-[#ddbc7a]'>
@@ -26,14 +26,14 @@ const AboutChef = () => {
           </svg>
         </div>
         <div className='grow'>
-          <div className='flex flex-row'>
-            <div className='p-5 w-1/2 md:w-auto max-w-[34rem]'>
-              <p className='mb-4 text-base lg:text-lg leading-3 md:leading-6 text-[#0B1928]'>About Chef and Kitchen</p>
+          <div className='flex flex-col md:flex-row'>
+            <div className='p-5 md:w-1/2 lg:w-auto md:max-w-[34rem]'>
+              <p className='mb-4 text-base leading-6 lg:text-lg lg:leading-9 md:leading-8 text-[#0B1928]'>About Chef and Kitchen</p>
               <p className='font-had text-2xl md:text-4xl ld:text-5xl leading-9 md:leading-[45px] lg:leading-[80px]'>The Health Food For Wealthy Mood</p>
               <p className='text-[#606060] text-lg leading-7 mb-10'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
               <button className='btn bg-[#ddbc7a]'>Learn more</button>
             </div>
-            <div className='text-right w-1/2 md:w-auto '>
+            <div className='text-right w-full md:w-auto '>
               <img src={chef2} alt="chef2" className='w-auto md:max-w-64 mb-4 float-end' />
               <img src={chef3} alt="chef3" className='w-auto md:max-w-80 float-end' />
             </div>
