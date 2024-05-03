@@ -7,7 +7,7 @@ import chef3 from "../../assets/images/chef-about-3.png"
 const AboutChef = () => {
   return (
     <div className='mx-4 md:mx-16 mb-8'>
-      <img src={bestQuality} alt="best-qualitity" className='w-14 sm:w-24 md:w-auto p-2 mx-auto bg-white lg:p-4 rounded-full -translate-y-1/2 -mb-16' />
+      <img src={bestQuality} alt="best-qualitity" className='w-16 sm:w-24 md:w-auto p-2 mx-auto bg-white lg:p-4 rounded-full -translate-y-1/2 -mb-16' />
       <div className='flex pt-8'>
         <div className='max-w-80 hidden lg:block relative'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
