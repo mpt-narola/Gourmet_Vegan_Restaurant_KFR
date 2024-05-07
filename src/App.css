@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  a{
+    @apply hover:text-[#ddbc71];
+  }
+}
+
+@layer components{
+  .btn{
+    @apply rounded-none text-sm leading-5 py-3 px-5;
+  }
+}
+
+@font-face {
+  font-family: 'Healing Again Demo';
+  src: local('Healing Again Demo'), url('../public/HealingAgainDemoRegular.ttf') format('opentype');
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import AppRoute from 'routes/AppRoute'
-import "./App.scss"
+import "./App.css"
+import "./custom.scss"
 
 const App = () => {
   return (
